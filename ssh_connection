@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Makes the SSH connection
+IP="$1"
+USER="$2"
+
+if [[ $# -ne 2]]
+then
+  echo "Usage: ./ssh_connection <user> <server IP>"
+else:
+  ssh "$USER"@"$IP"
+fi
